@@ -1,0 +1,3 @@
+# MergedManifestRefreshListener gets stuck in an infinite loop in Arctic Fox
+
+This repros a bug in Android Studio Arctic Fox 2021.3.1 where a thread in MergedManifestRefreshListener gets stuck in an infinite loop. In order to repro, just open this project in Android Studio and make any change to `lib1/src/main/AndroidManifest.xml`. Open Help -> Diagnostics Tools -> Activity Monitor to see the activity, and capture a thread dump.

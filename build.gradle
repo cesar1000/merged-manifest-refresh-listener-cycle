@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.0'
+    }
+}
+
+allprojects {
+    apply plugin: 'com.android.library'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    android {
+        compileSdkVersion 31
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        defaultConfig {
+            targetSdkVersion 31
+            minSdkVersion 31
+        }
+    }
+}
